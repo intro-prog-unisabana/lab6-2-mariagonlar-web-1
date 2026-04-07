@@ -11,9 +11,7 @@ def add_student(student_grades=None):
     subjects = {}
 
     while True:
-        entrada = input(
-            "Enter subject and grade (or 'exit' to finish):\n"
-        )
+        entrada = input("Enter subject and grade (or 'exit' to finish):\n")
         if entrada.lower() == "exit":
             break
         subject, grade = entrada.split(",")
@@ -21,8 +19,6 @@ def add_student(student_grades=None):
         grade = float(grade)
         subjects[subject] = grade
     student_grades[student_name] = subjects
-    print(
-        f"Student {student_name} successfully added to the grades management system."
-    )
+    print(f"Student {student_name} successfully added to the grades management system.")
     return student_grades
 
