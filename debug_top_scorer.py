@@ -15,8 +15,8 @@ while True:
 if len(scores) == 0:
     print("No scores recorded.")
 else:
-    top_name = ""
-    top_score = -1
+    top_name = name
+    top_score = scores[name]
     for name in scores:
         if scores[name] < top_score:
             top_score = scores[name]
