@@ -36,8 +36,8 @@ def menu():
 def run_program():
     # Puede haber un error de sintaxis aquí...
     inventory = {
-        "apples": 10
-        "bananas": 20
+        "apples": 10,
+        "bananas": 20,
         "oranges": 15
     }
 
