@@ -15,10 +15,12 @@ while True:
 if len(scores) == 0:
     print("No scores recorded.")
 else:
-    top_name = name
-    top_score = scores[name]
+    names = list(scores.keys())
+    top_name = names[0]
+    top_score = scores[top_name]
     for name in scores:
-        if scores[name] < top_score:
+        if scores[name] > top_score:
             top_score = scores[name]
             top_name = name
+            
     print(f"Top scorer: {top_name} with {top_score} points.")
